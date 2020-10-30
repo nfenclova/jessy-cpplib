@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "compilerPath": "x86_64-elf-gcc",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
