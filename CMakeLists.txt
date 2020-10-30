@@ -32,6 +32,10 @@ target_sources("jessy-cpplib" INTERFACE
   ${JESSY_CPPLIB_HEADERS}
 )
 
+target_compile_features("jessy-cpplib" INTERFACE
+  "cxx_std_20"
+)
+
 target_include_directories("jessy-cpplib" SYSTEM INTERFACE
   $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
 )
