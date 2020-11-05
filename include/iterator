@@ -1,0 +1,23 @@
+#ifndef JESSY_CPPLIB_ITERATOR
+#define JESSY_CPPLIB_ITERATOR
+
+#include <impl/iterator_tags.hpp>
+
+#include <type_traits>
+
+#ifdef __GNUG__
+#pragma system_header
+#endif
+
+namespace std
+{
+  using input_iterator_tag = impl::input_iterator_tag;
+  using output_iterator_tag = impl::output_iterator_tag;
+  using forward_iterator_tag = impl::forward_iterator_tag;
+  using bidirectional_iterator_tag = impl::bidirectional_iterator_tag;
+  using random_access_iterator_tag = impl::random_access_iterator_tag;
+  using contiguous_iterator_tag = impl::contiguous_iterator_tag;
+
+}  // namespace std
+
+#endif
