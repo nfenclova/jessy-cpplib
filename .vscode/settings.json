@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "**/include/*": "cpp"
+        "**/include/*": "cpp",
+        ".clang-format": "yaml",
+        ".clang-tidy": "yaml",
     }
 }
