@@ -1,47 +1,47 @@
 #ifndef JESSY_CPPLIB_CSTDINT
 #define JESSY_CPPLIB_CSTDINT
 
-#include <stdint.h>
+#include <impl/cstdint.hpp>
 
 namespace std
 {
-  using ::int16_t;
-  using ::int32_t;
-  using ::int64_t;
-  using ::int8_t;
+  using impl::cstdint::int16_t;
+  using impl::cstdint::int32_t;
+  using impl::cstdint::int64_t;
+  using impl::cstdint::int8_t;
 
-  using ::int_fast16_t;
-  using ::int_fast32_t;
-  using ::int_fast64_t;
-  using ::int_fast8_t;
+  using impl::cstdint::int_fast16_t;
+  using impl::cstdint::int_fast32_t;
+  using impl::cstdint::int_fast64_t;
+  using impl::cstdint::int_fast8_t;
 
-  using ::int_least16_t;
-  using ::int_least32_t;
-  using ::int_least64_t;
-  using ::int_least8_t;
+  using impl::cstdint::int_least16_t;
+  using impl::cstdint::int_least32_t;
+  using impl::cstdint::int_least64_t;
+  using impl::cstdint::int_least8_t;
 
-  using ::intmax_t;
+  using impl::cstdint::intmax_t;
 
-  using ::intptr_t;
+  using impl::cstdint::intptr_t;
 
-  using ::uint16_t;
-  using ::uint32_t;
-  using ::uint64_t;
-  using ::uint8_t;
+  using impl::cstdint::uint16_t;
+  using impl::cstdint::uint32_t;
+  using impl::cstdint::uint64_t;
+  using impl::cstdint::uint8_t;
 
-  using ::uint_fast16_t;
-  using ::uint_fast32_t;
-  using ::uint_fast64_t;
-  using ::uint_fast8_t;
+  using impl::cstdint::uint_fast16_t;
+  using impl::cstdint::uint_fast32_t;
+  using impl::cstdint::uint_fast64_t;
+  using impl::cstdint::uint_fast8_t;
 
-  using ::uint_least16_t;
-  using ::uint_least32_t;
-  using ::uint_least64_t;
-  using ::uint_least8_t;
+  using impl::cstdint::uint_least16_t;
+  using impl::cstdint::uint_least32_t;
+  using impl::cstdint::uint_least64_t;
+  using impl::cstdint::uint_least8_t;
 
-  using ::uintmax_t;
+  using impl::cstdint::uintmax_t;
 
-  using ::uintptr_t;
+  using impl::cstdint::uintptr_t;
 }  // namespace std
 
 #endif
