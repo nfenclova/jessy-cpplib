@@ -5,7 +5,7 @@
 #pragma system_header
 #endif
 
-#include <cstddef>
+#include <impl/cstddef.hpp>
 
 namespace std::impl
 {
@@ -22,7 +22,7 @@ namespace std::impl
     return container.begin();
   }
 
-  template<typename ElementType, std::size_t Size>
+  template<typename ElementType, std::impl::size_t Size>
   auto constexpr begin(ElementType (&array /* NOLINT */)[Size]) noexcept -> ElementType *
   {
     return &array[0];
@@ -40,7 +40,7 @@ namespace std::impl
     return container.end();
   }
 
-  template<typename ElementType, std::size_t Size>
+  template<typename ElementType, std::impl::size_t Size>
   auto constexpr end(ElementType (&array /* NOLINT */)[Size]) noexcept -> ElementType *
   {
     return &array[0] + Size;
