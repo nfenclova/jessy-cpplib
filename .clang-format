@@ -56,16 +56,15 @@ FixNamespaceComments: true
 
 IncludeBlocks: Regroup
 IncludeCategories:
+    # STL Implementation Headers
+    - Regex: '<impl/[[:alnum:]_]+\.hpp>'
+      Priority: 399
     # STL Headers
-    - Regex: '<[[:alnum:]._]+(?!\.(h|hpp))>'
+    - Regex: '<[[:alnum:]_]+>'
       Priority: 400
     # General System Headers
-    - Regex: '<([[:alnum:]._]/*)+\.(h|hpp)>'
+    - Regex: '<([[:alnum:]_])+\.h>'
       Priority: 300
-    # Local Headers
-    - Regex: '".+\.hpp"'
-      Priority: 100
-
       
 IndentCaseLabels: false
 IndentPPDirectives: None
