@@ -1,6 +1,7 @@
 #ifndef JESSY_CPPLIB_ITERATOR
 #define JESSY_CPPLIB_ITERATOR
 
+#include <impl/iterator_range_access.hpp>
 #include <impl/iterator_tags.hpp>
 
 #include <type_traits>
@@ -18,6 +19,8 @@ namespace std
   using random_access_iterator_tag = impl::random_access_iterator_tag;
   using contiguous_iterator_tag = impl::contiguous_iterator_tag;
 
+  using impl::begin;
+  using impl::cbegin;
 }  // namespace std
 
 #endif
