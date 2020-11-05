@@ -23,7 +23,7 @@ namespace std::impl
   }
 
   template<typename ElementType, std::size_t Size>
-  auto constexpr begin(ElementType (&array)[Size]) noexcept -> ElementType *
+  auto constexpr begin(ElementType (&array /* NOLINT */)[Size]) noexcept -> ElementType *
   {
     return &array[0];
   }
@@ -41,7 +41,7 @@ namespace std::impl
   }
 
   template<typename ElementType, std::size_t Size>
-  auto constexpr end(ElementType (&array)[Size]) noexcept -> ElementType *
+  auto constexpr end(ElementType (&array /* NOLINT */)[Size]) noexcept -> ElementType *
   {
     return &array[0] + Size;
   }
